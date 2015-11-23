@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
+        print("list of network interfaces: \(NetworkInterface.list())")
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
